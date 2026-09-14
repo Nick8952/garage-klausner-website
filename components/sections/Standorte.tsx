@@ -13,13 +13,12 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
       </Reveal>
       <ul className="mt-8 grid gap-5 md:grid-cols-2">
         {standorte.map((s) => (
-          <Reveal as="li" key={s._id} className="relative flex flex-col bg-white p-6 sm:p-8">
-            <div className="streifen absolute inset-x-0 top-0" aria-hidden="true" />
+          <Reveal as="li" key={s._id} className="relative flex flex-col rounded-lg border border-linie bg-white p-6 shadow-[0_1px_2px_rgba(18,20,26,.04)] sm:p-8">
             <h3 className="display text-2xl sm:text-[1.75rem]">{s.name}</h3>
             <p className="mt-3 text-grau">
               {s.strasse}, {s.plzOrt}
             </p>
-            <a href={telHref(s.telefon)} className="mono mt-4 inline-flex min-h-11 w-fit items-center text-2xl font-semibold text-blau underline-offset-4 hover:underline">
+            <a href={telHref(s.telefon)} className="mt-4 inline-flex min-h-11 w-fit items-center text-[1.6rem] font-semibold tracking-tight text-blau underline-offset-4 hover:underline">
               {s.telefon}
             </a>
             <a href={`mailto:${s.email}?subject=Anfrage`} className="inline-flex min-h-11 w-fit items-center break-all text-rot-tief underline-offset-4 hover:underline">
@@ -44,7 +43,7 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
                 href={s.kartenLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex min-h-11 w-fit items-center gap-2 border-b-2 border-tinte font-semibold transition-colors hover:border-rot hover:text-rot-tief"
+                className="mt-6 inline-flex min-h-11 w-fit items-center gap-2 rounded-md border border-tinte/25 bg-white px-4 text-[0.95rem] font-semibold shadow-[0_1px_2px_rgba(18,20,26,.06)] transition-colors hover:border-tinte hover:bg-halle"
               >
                 Auf der Karte anzeigen
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M3 13L13 3M6 3h7v7" /></svg>

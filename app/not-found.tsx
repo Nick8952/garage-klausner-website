@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="kurzzeile mb-3">Fehler 404</p>
       <h1 className="display text-[2.5rem] sm:text-[3.5rem]">Diese Seite gibt es nicht.</h1>
       <p className="mt-4 max-w-xl text-lg text-grau">Vielleicht wurde sie verschoben oder die Adresse ist falsch geschrieben.</p>
-      <Link href="/" className="mt-8 inline-flex min-h-12 items-center rounded-sm bg-rot px-5 font-semibold text-white hover:bg-rot-tief">
+      <Link href="/" className="mt-8 inline-flex min-h-12 items-center rounded-md bg-rot px-6 font-semibold text-white hover:bg-rot-tief">
         Zur Startseite
       </Link>
     </section>

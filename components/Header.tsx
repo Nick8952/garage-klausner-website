@@ -7,6 +7,14 @@ import type { Site } from "@/lib/types";
 import { telHref } from "@/lib/site-url";
 import { Bild } from "./ui/Bild";
 
+function TelefonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" />
+    </svg>
+  );
+}
+
 export function Header({ site }: { site: Site }) {
   const [offen, setOffen] = useState(false);
   const pfad = usePathname();
@@ -37,8 +45,8 @@ export function Header({ site }: { site: Site }) {
   const aktiv = (href: string) => (href === "/" ? pfad === "/" : pfad.startsWith(href));
 
   return (
-    <header className="sticky top-0 z-40 bg-halle/95 backdrop-blur supports-[backdrop-filter]:bg-halle/85">
-      <div className="streifen" aria-hidden="true" />
+    <header className="sticky top-0 z-40 border-b border-linie/70 bg-halle/95 backdrop-blur supports-[backdrop-filter]:bg-halle/85">
+      <div className="streifen streifen--fein" aria-hidden="true" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex min-h-12 items-center gap-3" aria-label={`${site.kurzname} – Startseite`}>
           {site.logo && <Bild bild={site.logo} sizes="48px" priority className="h-12 w-12 object-contain" />}
@@ -59,14 +67,18 @@ export function Header({ site }: { site: Site }) {
               {n.label}
             </Link>
           ))}
-          <a href={telHref(site.telefon)} className="mono ml-3 inline-flex min-h-11 items-center rounded-sm bg-blau px-4 text-sm font-semibold text-white transition-colors hover:bg-blau-tief">
+          <a
+            href={telHref(site.telefon)}
+            className="ml-3 inline-flex min-h-11 items-center gap-2 rounded-md bg-blau px-4 text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-blau-tief"
+          >
+            <TelefonIcon />
             {site.telefon}
           </a>
         </nav>
 
         <button
           type="button"
-          className="inline-flex h-12 w-12 items-center justify-center rounded-sm border-2 border-tinte md:hidden"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-tinte/25 bg-white shadow-[0_1px_2px_rgba(18,20,26,.06)] md:hidden"
           aria-expanded={offen}
           aria-controls={menuId}
           onClick={() => setOffen((o) => !o)}
@@ -92,8 +104,9 @@ export function Header({ site }: { site: Site }) {
               {n.label}
             </Link>
           ))}
-          <a href={telHref(site.telefon)} className="mono mt-4 inline-flex min-h-12 items-center justify-center rounded-sm bg-blau px-4 font-semibold text-white">
-            Anrufen: {site.telefon}
+          <a href={telHref(site.telefon)} className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blau px-4 font-semibold text-white">
+            <TelefonIcon />
+            {site.telefon}
           </a>
         </nav>
       </div>

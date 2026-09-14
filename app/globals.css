@@ -52,8 +52,12 @@ body {
 
 /* Signatur: das Wappen als Linie. */
 .streifen {
-  height: 4px;
+  height: 3px;
   background: linear-gradient(to right, var(--color-blau) 0 45%, var(--color-gelb) 45% 70%, var(--color-rot) 70% 100%);
+}
+
+.streifen--fein {
+  height: 2px;
 }
 
 .display {
@@ -66,9 +70,10 @@ body {
 }
 
 .kurzzeile {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-blau);
 }

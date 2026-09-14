@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { Link as LinkTyp } from "@/lib/types";
 
 const basis =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-5 py-3 font-semibold leading-none transition-colors duration-200 cursor-pointer";
+  "inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-6 py-3 font-body text-[0.95rem] font-semibold tracking-[0.01em] leading-none transition-[background-color,color,box-shadow,transform] duration-200 cursor-pointer active:translate-y-px";
 const varianten = {
-  primaer: `${basis} bg-rot text-white hover:bg-rot-tief`,
-  umriss: `${basis} border-2 border-tinte text-tinte hover:bg-tinte hover:text-white`,
-  hell: `${basis} border-2 border-white text-white hover:bg-white hover:text-tinte`,
+  primaer: `${basis} bg-rot text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.18)] hover:bg-rot-tief`,
+  umriss: `${basis} border border-tinte/25 bg-white text-tinte shadow-[0_1px_2px_rgba(18,20,26,.06)] hover:border-tinte hover:bg-halle`,
+  hell: `${basis} border border-white/40 bg-white/10 text-white hover:bg-white hover:text-blau`,
 };
 
 export function Button({ link, variante, className = "" }: { link: LinkTyp; variante?: keyof typeof varianten; className?: string }) {
