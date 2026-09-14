@@ -48,28 +48,28 @@ export function Header({ site }: { site: Site }) {
     <header className="sticky top-0 z-40 border-b border-linie/70 bg-halle/95 backdrop-blur supports-[backdrop-filter]:bg-halle/85">
       <div className="streifen streifen--fein" aria-hidden="true" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex min-h-12 items-center gap-3" aria-label={`${site.kurzname} – Startseite`}>
+        <Link href="/" className="flex min-h-12 shrink-0 items-center gap-3" aria-label={`${site.kurzname} – Startseite`}>
           {site.logo && <Bild bild={site.logo} sizes="48px" priority className="h-12 w-12 object-contain" />}
           <span className="flex flex-col leading-tight">
-            <span className="display text-[1.05rem] sm:text-lg">{site.kurzname}</span>
-            {site.claim && <span className="text-xs text-grau">{site.claim}</span>}
+            <span className="display text-[1.05rem] [text-wrap:nowrap] sm:text-lg md:text-base lg:text-lg">{site.kurzname}</span>
+            {site.claim && <span className="text-xs text-grau max-md:block md:hidden lg:block">{site.claim}</span>}
           </span>
         </Link>
 
-        <nav aria-label="Hauptnavigation" className="hidden items-center gap-1 md:flex">
+        <nav aria-label="Hauptnavigation" className="hidden items-center gap-0.5 md:flex lg:gap-1">
           {site.navigation.map((n) => (
             <Link
               key={n.href}
               href={n.href}
               aria-current={aktiv(n.href) ? "page" : undefined}
-              className={`relative flex min-h-11 items-center px-3 font-medium transition-colors after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-rot after:transition-transform after:duration-200 hover:text-rot-tief hover:after:scale-x-100 ${aktiv(n.href) ? "text-blau after:scale-x-100 after:bg-blau" : "text-tinte"}`}
+              className={`relative flex min-h-11 items-center px-2.5 font-medium lg:px-3 transition-colors after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-rot after:transition-transform after:duration-200 hover:text-rot-tief hover:after:scale-x-100 ${aktiv(n.href) ? "text-blau after:scale-x-100 after:bg-blau" : "text-tinte"}`}
             >
               {n.label}
             </Link>
           ))}
           <a
             href={telHref(site.telefon)}
-            className="ml-3 inline-flex min-h-11 items-center gap-2 rounded-md bg-blau px-4 text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-blau-tief"
+            className="ml-2 inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-md bg-blau px-4 lg:ml-3 text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-blau-tief"
           >
             <TelefonIcon />
             {site.telefon}

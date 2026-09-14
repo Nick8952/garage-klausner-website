@@ -6,7 +6,7 @@ const basis =
 const varianten = {
   primaer: `${basis} bg-rot text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.18)] hover:bg-rot-tief`,
   umriss: `${basis} border border-tinte/25 bg-white text-tinte shadow-[0_1px_2px_rgba(18,20,26,.06)] hover:border-tinte hover:bg-halle`,
-  hell: `${basis} border border-white/40 bg-white/10 text-white hover:bg-white hover:text-blau`,
+  hell: `${basis} border border-white/50 bg-white/10 text-white backdrop-blur-sm hover:bg-white hover:text-tinte`,
 };
 
 export function Button({ link, variante, className = "" }: { link: LinkTyp; variante?: keyof typeof varianten; className?: string }) {
