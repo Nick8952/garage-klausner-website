@@ -1,0 +1,14 @@
+{
+  "titel": "Impressum",
+  "slug": "impressum",
+  "seoBeschreibung": "Impressum der Garage Elefant Klausner AG, Zürich.",
+  "bausteine": [
+    {
+      "_type": "textBaustein",
+      "kurzzeile": "Rechtliches",
+      "titel": "Impressum",
+      "text": "### Verantwortlich für den Inhalt\n\n**Garage Elefant Klausner AG**\nHofackerstrasse 74\n8032 Zürich\nTelefon [044 381 47 17](tel:+41443814717)\nE-Mail [elefant@garageklausner.ch](mailto:elefant@garageklausner.ch)\n\n### Zweite Werkstatt\n\nWeinbergstrasse 62\n8006 Zürich\nTelefon [044 525 19 95](tel:+41445251995)\nE-Mail [weinberg@garageklausner.ch](mailto:weinberg@garageklausner.ch)\n\n### Handelsregister und UID\n\nVom Betrieb zu ergänzen (Handelsregister-Nummer, UID). Diese Angaben stehen nicht auf der bisherigen Website und wurden deshalb nicht übernommen.\n\n### Bilder\n\nAlle Fotos und das Wappen stammen von der Garage Elefant Klausner AG.",
+      "breite": "schmal"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "titel": "Familienbetrieb",
+  "slug": "familienbetrieb",
+  "seoBeschreibung": "Garage Elefant Klausner AG – Familienbetrieb seit Generationen in Zürich. Alte Klassiker und moderne Elektrofahrzeuge.",
+  "bausteine": [
+    {
+      "_type": "textBildBaustein",
+      "kurzzeile": "Über uns",
+      "titel": "Familienbetrieb seit Generationen",
+      "text": "Wir freuen uns über Ihren Besuch auf unserer Website.\n\nOb alte Klassiker oder moderne Elektrofahrzeuge – wir kümmern uns gerne um Ihr Anliegen.",
+      "bild": { "src": "/img/familie-lancia-aurelia.webp", "alt": "Historische Schwarz-Weiss-Aufnahme: Mutter mit Kind auf dem Arm neben einem offenen Lancia-Cabriolet", "width": 1800, "height": 1167 },
+      "bildRechts": false,
+      "schaltflaechen": [{ "label": "Werkstätten", "slug": "werkstaetten" }]
+    },
+    {
+      "_type": "bildBaustein",
+      "bild": { "src": "/img/hero-lancia-delta.webp", "alt": "Roter Lancia Delta am Rand einer Landstrasse", "width": 2000, "height": 705 },
+      "bildunterschrift": "",
+      "breite": "inhalt"
+    },
+    {
+      "_type": "ctaBaustein",
+      "titel": "Erreichbar unter 044 381 47 17",
+      "text": "Garage Elefant, Hofackerstrasse 74, 8032 Zürich.",
+      "schaltflaechen": [
+        { "label": "Anrufen", "url": "tel:+41443814717", "primaer": true },
+        { "label": "Kontakt", "slug": "kontakt" }
+      ]
+    }
+  ]
+}

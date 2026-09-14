@@ -1,0 +1,16 @@
+{
+  "titel": "Kontakt",
+  "slug": "kontakt",
+  "seoBeschreibung": "Kontakt zur Garage Klausner Zürich: Telefon 044 381 47 17, elefant@garageklausner.ch, Hofackerstrasse 74 und Weinbergstrasse 62.",
+  "bausteine": [
+    {
+      "_type": "kontaktFormularBaustein",
+      "kurzzeile": "Kontakt",
+      "titel": "Anfrage an die Werkstatt",
+      "text": "Wählen Sie die Werkstatt, beschreiben Sie Fahrzeug und Anliegen. Die Schaltfläche öffnet Ihr E-Mail-Programm mit der fertigen Nachricht – abgeschickt wird sie erst dort.",
+      "betreff": "Anfrage über die Website",
+      "hinweisNachAbsenden": "Ihr E-Mail-Programm sollte sich jetzt geöffnet haben. Falls nicht, schreiben Sie uns direkt an die Adresse der gewünschten Werkstatt."
+    },
+    { "_type": "standorteBaustein", "kurzzeile": "", "titel": "Direkt erreichen", "text": "" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "titel": "Werkstätten",
+  "slug": "werkstaetten",
+  "seoBeschreibung": "Die beiden Werkstätten der Garage Klausner in Zürich: Hofackerstrasse 74 (Mo–Fr 08:00–12:00, 13:30–17:30) und Weinbergstrasse 62 (Termin auf Anfrage).",
+  "bausteine": [
+    {
+      "_type": "textBaustein",
+      "kurzzeile": "Werkstätten",
+      "titel": "Zwei Werkstätten in Zürich",
+      "text": "An der Hofackerstrasse sind wir zu den Öffnungszeiten für Sie da, an der Weinbergstrasse nach Vereinbarung. Rufen Sie an oder schreiben Sie der Werkstatt Ihrer Wahl eine E-Mail.",
+      "breite": "schmal"
+    },
+    { "_type": "standorteBaustein", "kurzzeile": "", "titel": "Adressen und Öffnungszeiten", "text": "" },
+    {
+      "_type": "ctaBaustein",
+      "titel": "Anfrage stellen",
+      "text": "Beschreiben Sie uns kurz Ihr Fahrzeug und Ihr Anliegen – wir melden uns.",
+      "schaltflaechen": [{ "label": "Zum Kontaktformular", "slug": "kontakt", "primaer": true }]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+# Zweite Auslieferung: statischer Export auf GitHub Pages (nick8952.github.io/garage-klausner-website).
+# Die Hauptdemo läuft auf Vercel (Live-Inhalte, Vorschau, Studio). Hier gibt es keinen Server,
+# deshalb fliegen app/api und app/studio vor dem Build raus. Inhalte kommen aus Sanity, wenn
+# die Repository-Variable NEXT_PUBLIC_SANITY_PROJECT_ID gesetzt ist – sonst aus data/.
+#
+# Auslöser: Push auf main, Hand-Start, oder ein Sanity-Webhook per repository_dispatch
+# (event_type «sanity-publish», siehe docs/HANDOVER.md).
+name: GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [sanity-publish]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Server-Routen entfernen (Static Export)
+        run: rm -rf app/api app/studio
+      - name: Statisch bauen
+        env:
+          STATIC_EXPORT: "1"
+          BASE_PATH: /${{ github.event.repository.name }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ vars.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+          NEXT_PUBLIC_SANITY_DATASET: ${{ vars.NEXT_PUBLIC_SANITY_DATASET || 'production' }}
+        run: |
+          npm run build
+          touch out/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

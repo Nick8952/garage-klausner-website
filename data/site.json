@@ -1,0 +1,21 @@
+{
+  "firmenname": "Garage Elefant Klausner AG",
+  "kurzname": "Garage Klausner",
+  "claim": "Familienbetrieb seit Generationen",
+  "logo": { "src": "/img/logo-klausner.png", "alt": "Wappen der Klausner AG mit rotem Elefanten", "width": 320, "height": 320 },
+  "telefon": "044 381 47 17",
+  "email": "elefant@garageklausner.ch",
+  "navigation": [
+    { "label": "Werkstätten", "slug": "werkstaetten" },
+    { "label": "Familienbetrieb", "slug": "familienbetrieb" },
+    { "label": "Kontakt", "slug": "kontakt" }
+  ],
+  "footerLinks": [
+    { "label": "Impressum", "slug": "impressum" },
+    { "label": "Datenschutz", "slug": "datenschutz" }
+  ],
+  "footerText": "Zwei Werkstätten in Zürich – für alte Klassiker und moderne Elektrofahrzeuge.",
+  "seoTitelZusatz": "Garage Klausner Zürich",
+  "seoBeschreibung": "Garage Elefant Klausner AG: Familienbetrieb mit zwei Werkstätten in Zürich – Hofackerstrasse 74 und Weinbergstrasse 62. Klassiker und moderne Elektrofahrzeuge.",
+  "demoModus": true
+}

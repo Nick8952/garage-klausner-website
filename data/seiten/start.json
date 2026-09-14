@@ -1,0 +1,43 @@
+{
+  "titel": "Garage Klausner – Werkstätten in Zürich",
+  "slug": "start",
+  "seoTitel": "Garage Klausner – Werkstätten in Zürich",
+  "seoBeschreibung": "Familienbetrieb seit Generationen: Garage Elefant Klausner AG mit Werkstätten an der Hofackerstrasse 74 und Weinbergstrasse 62 in Zürich.",
+  "bausteine": [
+    {
+      "_type": "heroBaustein",
+      "kurzzeile": "Familienbetrieb seit Generationen",
+      "titel": "Garage Klausner",
+      "text": "Ob alte Klassiker oder moderne Elektrofahrzeuge – wir kümmern uns gerne um Ihr Anliegen. Zwei Werkstätten in Zürich.",
+      "bild": { "src": "/img/hero-lancia-delta.webp", "alt": "Roter Lancia Delta am Rand einer Landstrasse mit Wiese im Vordergrund", "width": 2000, "height": 705 },
+      "schaltflaechen": [
+        { "label": "Werkstätten ansehen", "slug": "werkstaetten", "primaer": true },
+        { "label": "044 381 47 17", "url": "tel:+41443814717" }
+      ]
+    },
+    {
+      "_type": "standorteBaustein",
+      "kurzzeile": "Zwei Adressen in Zürich",
+      "titel": "Werkstätten",
+      "text": ""
+    },
+    {
+      "_type": "textBildBaustein",
+      "kurzzeile": "Über uns",
+      "titel": "Familienbetrieb seit Generationen",
+      "text": "Wir freuen uns über Ihren Besuch auf unserer Website.\n\nOb alte Klassiker oder moderne Elektrofahrzeuge – wir kümmern uns gerne um Ihr Anliegen.",
+      "bild": { "src": "/img/familie-lancia-aurelia.webp", "alt": "Historische Schwarz-Weiss-Aufnahme: Mutter mit Kind auf dem Arm neben einem offenen Lancia-Cabriolet", "width": 1800, "height": 1167 },
+      "bildRechts": true,
+      "schaltflaechen": [{ "label": "Mehr zum Betrieb", "slug": "familienbetrieb" }]
+    },
+    {
+      "_type": "ctaBaustein",
+      "titel": "Erreichbar unter 044 381 47 17",
+      "text": "Garage Elefant, Hofackerstrasse 74, 8032 Zürich – oder per E-Mail an elefant@garageklausner.ch.",
+      "schaltflaechen": [
+        { "label": "Anrufen", "url": "tel:+41443814717", "primaer": true },
+        { "label": "E-Mail schreiben", "url": "mailto:elefant@garageklausner.ch?subject=Anfrage" }
+      ]
+    }
+  ]
+}
