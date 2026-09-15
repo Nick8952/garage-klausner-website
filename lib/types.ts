@@ -29,6 +29,9 @@ export type Site = {
   seoTitelZusatz?: string;
   seoBeschreibung?: string;
   demoModus: boolean;
+  cookieHinweisAnzeigen: boolean;
+  cookieHinweisText?: string;
+  cookieHinweisButton?: string;
 };
 
 type Basis = { _key: string };

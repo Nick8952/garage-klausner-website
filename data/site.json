@@ -17,5 +17,8 @@
   "footerText": "Zwei Werkstätten in Zürich – für alte Klassiker und moderne Elektrofahrzeuge.",
   "seoTitelZusatz": "Garage Klausner Zürich",
   "seoBeschreibung": "Garage Elefant Klausner AG: Familienbetrieb mit zwei Werkstätten in Zürich – Hofackerstrasse 74 und Weinbergstrasse 62. Klassiker und moderne Elektrofahrzeuge.",
-  "demoModus": true
+  "demoModus": true,
+  "cookieHinweisAnzeigen": true,
+  "cookieHinweisText": "Diese Website verwendet keine Cookies zur Nachverfolgung und keine Analysedienste. Es werden nur technisch notwendige Daten verarbeitet.",
+  "cookieHinweisButton": "Verstanden"
 }

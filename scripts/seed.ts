@@ -81,6 +81,9 @@ async function main() {
     seoTitelZusatz: siteJson.seoTitelZusatz,
     seoBeschreibung: siteJson.seoBeschreibung,
     demoModus: siteJson.demoModus,
+    cookieHinweisAnzeigen: siteJson.cookieHinweisAnzeigen,
+    cookieHinweisText: siteJson.cookieHinweisText,
+    cookieHinweisButton: siteJson.cookieHinweisButton,
   });
 
   for (const s of standorteJson) {

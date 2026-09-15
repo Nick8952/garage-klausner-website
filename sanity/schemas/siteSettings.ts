@@ -8,6 +8,7 @@ export const siteSettings = defineType({
     { name: "betrieb", title: "Betrieb", default: true },
     { name: "navigation", title: "Navigation & Fusszeile" },
     { name: "seo", title: "Suchmaschinen" },
+    { name: "recht", title: "Cookie-Hinweis" },
   ],
   fields: [
     defineField({
@@ -124,6 +125,32 @@ export const siteSettings = defineType({
       group: "seo",
       description: "Erscheint in Suchergebnissen, wenn eine Seite keine eigene Beschreibung hat. Maximal 160 Zeichen.",
       validation: (r) => r.max(160).warning("Google kürzt Beschreibungen über 160 Zeichen."),
+    }),
+    defineField({
+      name: "cookieHinweisAnzeigen",
+      title: "Cookie-Hinweis anzeigen",
+      type: "boolean",
+      group: "recht",
+      description: "Zeigt beim ersten Besuch eine Leiste am unteren Rand. Die Website setzt selbst keine Tracking-Cookies – der Hinweis informiert nur.",
+      initialValue: true,
+    }),
+    defineField({
+      name: "cookieHinweisText",
+      title: "Text des Hinweises",
+      type: "text",
+      rows: 3,
+      group: "recht",
+      description: "Kurz und ehrlich. Der Link zur Datenschutzerklärung wird automatisch angehängt.",
+      initialValue: "Diese Website verwendet keine Cookies zur Nachverfolgung und keine Analysedienste. Es werden nur technisch notwendige Daten verarbeitet.",
+      validation: (r) => r.max(300),
+    }),
+    defineField({
+      name: "cookieHinweisButton",
+      title: "Beschriftung der Schaltfläche",
+      type: "string",
+      group: "recht",
+      initialValue: "Verstanden",
+      validation: (r) => r.max(30),
     }),
     defineField({
       name: "demoModus",

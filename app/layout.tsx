@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { draftMode } from "next/headers";
 import { Footer } from "@/components/Footer";
+import { CookieHinweis } from "@/components/CookieHinweis";
 import { Header } from "@/components/Header";
 import { Entwurfswerkzeuge } from "@/components/Entwurfswerkzeuge";
 import { ladeSite, ladeStandorte } from "@/lib/data";
@@ -43,6 +44,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           {children}
         </main>
         <Footer site={site} standorte={standorte} />
+        {site.cookieHinweisAnzeigen && (
+          <CookieHinweis text={site.cookieHinweisText} button={site.cookieHinweisButton} datenschutzHref={site.footerLinks.find((l) => /datenschutz/i.test(l.label))?.href ?? "/datenschutz"} />
+        )}
         <script type="application/ld+json" // «<» maskieren, damit CMS-Text das Script-Element nicht beenden kann.
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organisationJsonLd(site, standorte)).replace(/</g, "\\u003c") }} />
         {isSanityConfigured && !isStaticExport && <SanityLive />}

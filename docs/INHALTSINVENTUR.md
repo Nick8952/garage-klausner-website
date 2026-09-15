@@ -43,7 +43,7 @@ Optimierte Web-Versionen liegen in `public/img/` und werden per `npm run seed` n
 |---|---|
 | mailto-Links | mailto-Links + Kontaktformular, das eine vorbefüllte E-Mail im E-Mail-Programm öffnet (kein Server-Versand, keine falsche Versandbestätigung) |
 | Google-Maps-Link (nur Weinbergstrasse) | «Auf der Karte anzeigen» bei beiden Werkstätten, externer Link |
-| Cookie-Banner | entfällt – Demo setzt keine Cookies |
+| Cookie-Banner | eigener Hinweis-Banner (`components/CookieHinweis.tsx`), Text/Schalter in Sanity → Website-Einstellungen → «Cookie-Hinweis». Reiner Hinweis, kein Consent-Mechanismus, weil keine Tracking-Cookies gesetzt werden; Bestätigung liegt im Local Storage. |
 | Kein Formular, keine Buchung, keine Einbindungen | – |
 
 ## Offene Liste: Widersprüche, Defekte, fehlende Angaben (nicht stillschweigend entschieden)

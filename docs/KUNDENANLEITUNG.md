@@ -59,6 +59,11 @@ wollen, lassen Sie sich einen eigenen Baustein einbauen (kleiner Auftrag).
 - Jede Seite hat oben rechts eine **Historie** (Uhr-Symbol) – dort können Sie einen früheren Stand wiederherstellen.
 - Nichts kann kaputtgehen, das nicht mit zwei Klicks zurückgeht. Das Layout selbst ist nicht veränderbar.
 
+## Cookie-Hinweis, Impressum, Datenschutz
+
+- **Cookie-Hinweis:** Website-Einstellungen → «Cookie-Hinweis» – Text und Schaltfläche ändern oder ganz ausschalten.
+- **Impressum / Datenschutz:** Bereich Seiten → «Impressum» bzw. «Datenschutz» → Baustein «Text» bearbeiten. Beide sind in der Fusszeile verlinkt. Vor dem Go-live rechtlich prüfen lassen; das Impressum braucht noch UID/Handelsregister-Nummer.
+
 ## Vor dem Umzug auf garageklausner.ch
 
 **Website-Einstellungen** → Suchmaschinen → «Demo-Modus» **ausschalten**, sonst bleibt die Website für Google unsichtbar.

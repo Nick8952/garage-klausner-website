@@ -28,7 +28,9 @@ export const SITE_QUERY = defineQuery(`*[_type == "siteSettings"][0]{
   "navigation": coalesce(navigation[]${navLink}, []),
   "footerLinks": coalesce(footerLinks[]${navLink}, []),
   footerText, seoTitelZusatz, seoBeschreibung,
-  "demoModus": coalesce(demoModus, true)
+  "demoModus": coalesce(demoModus, true),
+  "cookieHinweisAnzeigen": coalesce(cookieHinweisAnzeigen, true),
+  cookieHinweisText, cookieHinweisButton
 }`);
 
 export const STANDORTE_QUERY = defineQuery(`*[_type == "standort"] | order(reihenfolge asc, name asc){

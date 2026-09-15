@@ -65,6 +65,7 @@ Screenshots/Audits: puppeteer-core im Scratchpad gegen `next start -p 3311` (sie
 - Nur Fakten der alten Website (`docs/INHALTSINVENTUR.md`). Keine Preise, Leistungen, Team, Bewertungen erfinden.
 - Rechtstexte: Impressum nur belegte Angaben; Datenschutz ist ein gekennzeichneter Entwurf.
 - Kontaktformular öffnet **mailto** – keine Versandbestätigung vortäuschen.
+- Cookie-Hinweis (`components/CookieHinweis.tsx`) ist ein reiner Hinweis (Local Storage), **kein** Consent-Tool – die Seite setzt keine Tracking-Cookies. Werden je Analytics/Maps-Iframes eingebaut, braucht es echte Einwilligung. Texte/Schalter in `siteSettings` (Gruppe «Cookie-Hinweis»).
 
 ## Deployment & Wartung
 
