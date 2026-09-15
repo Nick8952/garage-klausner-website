@@ -10,11 +10,11 @@ export function TextBild({ b, erster }: { b: TextBildBaustein; erster: boolean }
   return (
     <Reveal as="section" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
       <div className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
-        <div className={rechts ? "" : "md:order-2"}>
+        <div className={`text-center ${rechts ? "" : "md:order-2"}`}>
           <Abschnittskopf kurzzeile={b.kurzzeile} titel={b.titel} as={erster ? "h1" : "h2"} />
           <Text value={b.text} className="mt-6" />
           {!!b.schaltflaechen?.length && (
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
               {b.schaltflaechen.map((l) => <Button key={l.label} link={l} />)}
             </div>
           )}

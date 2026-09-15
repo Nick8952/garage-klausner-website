@@ -10,13 +10,13 @@ export function Footer({ site, standorte }: { site: Site; standorte: Standort[] 
         <div>
           <p className="display text-2xl">{site.firmenname}</p>
           {site.footerText && <p className="mt-3 max-w-sm text-white/75">{site.footerText}</p>}
-          <a href={telHref(site.telefon)} className="mt-5 inline-flex min-h-11 items-center text-lg font-semibold text-gelb underline-offset-4 hover:underline">
+          <a href={telHref(site.telefon)} className="mt-5 inline-flex min-h-11 items-center text-lg font-semibold text-white underline-offset-4 hover:underline">
             {site.telefon}
           </a>
         </div>
         {standorte.map((s) => (
           <address key={s._id} className="not-italic">
-            <p className="kurzzeile mb-2 !text-gelb">{s.name}</p>
+            <p className="kurzzeile mb-2 !text-white/70">{s.name}</p>
             <p>
               {s.strasse}
               <br />

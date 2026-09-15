@@ -75,7 +75,12 @@ body {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-blau);
+  color: var(--color-rot);
+}
+
+.hero-titel {
+  font-variation-settings: "wdth" 120;
+  letter-spacing: 0.005em;
 }
 
 .mono {

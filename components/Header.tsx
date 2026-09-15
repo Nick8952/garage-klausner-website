@@ -62,14 +62,14 @@ export function Header({ site }: { site: Site }) {
               key={n.href}
               href={n.href}
               aria-current={aktiv(n.href) ? "page" : undefined}
-              className={`relative flex min-h-11 items-center px-2.5 font-medium lg:px-3 transition-colors after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-rot after:transition-transform after:duration-200 hover:text-rot-tief hover:after:scale-x-100 ${aktiv(n.href) ? "text-blau after:scale-x-100 after:bg-blau" : "text-tinte"}`}
+              className={`relative flex min-h-11 items-center px-2.5 font-medium lg:px-3 transition-colors after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-rot after:transition-transform after:duration-200 hover:text-rot-tief hover:after:scale-x-100 ${aktiv(n.href) ? "text-rot-tief after:scale-x-100 after:bg-rot" : "text-tinte"}`}
             >
               {n.label}
             </Link>
           ))}
           <a
             href={telHref(site.telefon)}
-            className="ml-2 inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-md bg-blau px-4 lg:ml-3 text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-blau-tief"
+            className="ml-2 inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-md bg-rot px-3 text-sm lg:ml-3 lg:px-4 lg:text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-rot-tief"
           >
             <TelefonIcon />
             {site.telefon}
@@ -96,15 +96,15 @@ export function Header({ site }: { site: Site }) {
 
       <div id={menuId} hidden={!offen} className="border-t border-linie bg-halle md:hidden">
         <nav aria-label="Mobile Navigation" className="mx-auto flex max-w-6xl flex-col px-4 py-3 sm:px-6">
-          <Link href="/" aria-current={pfad === "/" ? "page" : undefined} className={`flex min-h-12 items-center border-b border-linie text-lg font-medium ${pfad === "/" ? "text-blau" : ""}`}>
+          <Link href="/" aria-current={pfad === "/" ? "page" : undefined} className={`flex min-h-12 items-center border-b border-linie text-lg font-medium ${pfad === "/" ? "text-rot-tief" : ""}`}>
             Start
           </Link>
           {site.navigation.map((n) => (
-            <Link key={n.href} href={n.href} aria-current={aktiv(n.href) ? "page" : undefined} className={`flex min-h-12 items-center border-b border-linie text-lg font-medium ${aktiv(n.href) ? "text-blau" : ""}`}>
+            <Link key={n.href} href={n.href} aria-current={aktiv(n.href) ? "page" : undefined} className={`flex min-h-12 items-center border-b border-linie text-lg font-medium ${aktiv(n.href) ? "text-rot-tief" : ""}`}>
               {n.label}
             </Link>
           ))}
-          <a href={telHref(site.telefon)} className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blau px-4 font-semibold text-white">
+          <a href={telHref(site.telefon)} className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-rot px-4 font-semibold text-white">
             <TelefonIcon />
             {site.telefon}
           </a>

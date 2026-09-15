@@ -7,7 +7,7 @@ export function Faq({ b, erster }: { b: FaqBaustein; erster: boolean }) {
   return (
     <Reveal as="section" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
       <Abschnittskopf kurzzeile={b.kurzzeile} titel={b.titel} as={erster ? "h1" : "h2"} />
-      <div className="mt-8 max-w-3xl divide-y divide-linie border-y border-linie">
+      <div className="mx-auto mt-8 max-w-3xl divide-y divide-linie border-y border-linie">
         {b.fragen.map((f) => (
           <details key={f._key} className="group">
             <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-lg font-semibold marker:content-none">

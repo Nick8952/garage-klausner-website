@@ -37,7 +37,7 @@ export function KontaktFormular({ b, standorte, erster }: { b: KontaktFormularBa
   return (
     <Reveal as="section" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
       <Abschnittskopf kurzzeile={b.kurzzeile} titel={b.titel} text={b.text} as={erster ? "h1" : "h2"} />
-      <form onSubmit={absenden} className="mt-8 grid max-w-3xl gap-5 sm:grid-cols-2" noValidate={false}>
+      <form onSubmit={absenden} className="mx-auto mt-8 grid max-w-3xl gap-5 sm:grid-cols-2" noValidate={false}>
         <div className="sm:col-span-2">
           <label htmlFor={`${id}-werkstatt`} className={label}>Werkstatt</label>
           <select id={`${id}-werkstatt`} name="werkstatt" value={werkstatt} onChange={(e) => setWerkstatt(e.target.value)} className={feld}>

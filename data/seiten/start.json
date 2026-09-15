@@ -9,7 +9,7 @@
       "kurzzeile": "Familienbetrieb seit Generationen",
       "titel": "Garage Klausner",
       "text": "Ob alte Klassiker oder moderne Elektrofahrzeuge – wir kümmern uns gerne um Ihr Anliegen. Zwei Werkstätten in Zürich.",
-      "bild": { "src": "/img/hero-lancia-delta.webp", "alt": "Roter Lancia Delta am Rand einer Landstrasse mit Wiese im Vordergrund", "width": 2250, "height": 1073 },
+      "bild": { "src": "/img/hero-lancia-delta-freigestellt.webp", "alt": "Roter Lancia Delta am Rand einer Landstrasse mit Wiese im Vordergrund", "width": 2250, "height": 753 },
       "schaltflaechen": [
         { "label": "Werkstätten ansehen", "slug": "werkstaetten", "primaer": true },
         { "label": "044 381 47 17", "url": "tel:+41443814717" }

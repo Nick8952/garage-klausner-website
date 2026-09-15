@@ -14,11 +14,11 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
       <ul className="mt-8 grid gap-5 md:grid-cols-2">
         {standorte.map((s) => (
           <Reveal as="li" key={s._id} className="relative flex flex-col rounded-lg border border-linie bg-white p-6 shadow-[0_1px_2px_rgba(18,20,26,.04)] sm:p-8">
-            <h3 className="display text-2xl sm:text-[1.75rem]">{s.name}</h3>
+            <h3 className="display text-2xl text-rot sm:text-[1.75rem]">{s.name}</h3>
             <p className="mt-3 text-grau">
               {s.strasse}, {s.plzOrt}
             </p>
-            <a href={telHref(s.telefon)} className="mt-4 inline-flex min-h-11 w-fit items-center text-[1.6rem] font-semibold tracking-tight text-blau underline-offset-4 hover:underline">
+            <a href={telHref(s.telefon)} className="mt-4 inline-flex min-h-11 w-fit items-center text-[1.6rem] font-semibold tracking-tight text-tinte underline-offset-4 hover:underline">
               {s.telefon}
             </a>
             <a href={`mailto:${s.email}?subject=Anfrage`} className="inline-flex min-h-11 w-fit items-center break-all text-rot-tief underline-offset-4 hover:underline">

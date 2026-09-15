@@ -51,12 +51,11 @@ Screenshots/Audits: puppeteer-core im Scratchpad gegen `next start -p 3311` (sie
 
 ## Designregeln «Elefantino»
 
-- Farben aus dem Wappen: Blau `#222c77`, Gelb `#ffed00` (nur Marker/Streifen), Rot `#e30814` (CTA),
-  Hallengrau `#f2f2ef`, Tinte `#12141a`. Tokens in `app/globals.css` (`@theme inline`), keine Roh-Hex in Komponenten.
+- **Rot `#e30814` ist die Leitfarbe** (Nicks Vorgabe 15.09.2026, wie die alte Seite): Hero-Schriftzug, Abschnittstitel, Kurzzeilen-Akzent, Telefon-Button, primäre Buttons. Blau `#222c77` und Gelb `#ffed00` nur noch im Dreifarb-Streifen und im Logo. Hallengrau `#f2f2ef`, Tinte `#12141a` (dunkler Aufruf-Kasten). Tokens in `app/globals.css` (`@theme inline`), keine Roh-Hex in Komponenten.
 - Schrift: Archivo (variabel, `wdth` 118, Titel), IBM Plex Sans (Text, Buttons, Kurzzeilen, Telefonnummern), IBM Plex Mono **nur** für die Öffnungszeiten-Tabelle. Nur via `next/font`. Buttons: `rounded-md`, Sans semibold, dezenter Schatten – keine Mono-Schrift (Nicks Vorgabe 15.09.2026).
 - Signatur: `.streifen` (Blau/Gelb/Rot-Linie, 2–3 px) nur als feine Kante über Kopf- und Fusszeile. Karten/Kästen tragen keinen Streifen; blaue Kästen (Hero-Schild, Aufruf) sind `rounded-lg` mit dezentem Verlauf Blau→Blau-tief.
-- Hero (Nicks Vorgabe 15.09.2026): Bild soll «zur Geltung kommen» wie auf der alten Seite – Titel oben im Himmel, Auto unverdeckt, Text/Buttons unten. Desktop = Vollbild-Cover mit Verlauf unten, < lg = gestapelt (Titel, Bild 4:3/16:9 um das Auto beschnitten, Text). Nie Text oder Kästen über das Auto legen.
-- Linksbündig, 8-px-Raster, Inhaltsbreite `max-w-6xl`, Sektionen `py-14 sm:py-20`.
+- **Hero wie die alte Seite** (Nicks Vorgabe 15.09.2026): Schriftzug «GARAGE KLAUSNER» gross, rot, uppercase, zentriert im weissen Himmel – und das **Auto steht davor** (Titel liegt hinter dem Fahrzeug). Technik: Hero-Bild ist ein WebP mit transparentem Himmel (`public/img/hero-lancia-delta-freigestellt.webp`, Auto + Boden opak), H1 absolut dahinter, Grössen/Offsets in vw pro Breakpoint (`components/sections/Hero.tsx`). Kurzzeile, Text, Buttons zentriert unter dem Bild. Nie Kästen über das Auto legen.
+- Abschnittsköpfe zentriert (`Abschnittskopf`), Karten-/Fliesstext linksbündig; 8-px-Raster, Inhaltsbreite `max-w-6xl`, Sektionen `py-14 sm:py-20`.
 - Motion: nur `.reveal` (Opacity/10 px) + Hover-Unterstreichung; `prefers-reduced-motion` schaltet alles ab.
 - Touch-Ziele ≥ 44 px (`min-h-11`/`min-h-12`), sichtbarer Fokus global (`:focus-visible`), Kontraste ≥ 4.5:1 (gemessen, siehe Prüfbericht).
 - Kein Reskin anderer Demos; keine erfundenen Fakten, Statistiken oder Bewertungen.
