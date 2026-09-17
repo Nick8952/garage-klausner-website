@@ -24,7 +24,7 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
             <a href={`mailto:${s.email}?subject=Anfrage`} className="inline-flex min-h-11 w-fit items-center break-all text-rot-tief underline-offset-4 hover:underline">
               {s.email}
             </a>
-            <dl className="mono mt-5 border-t border-linie pt-4 text-[0.95rem]">
+            <dl className="mono mt-5 border-t border-linie pt-4 text-[0.95rem] text-tinte">
               {s.oeffnungszeiten.map((z) => (
                 <div key={z.tage} className="flex flex-wrap justify-between gap-x-4 py-1">
                   <dt className="text-grau">{z.tage}</dt>
@@ -43,7 +43,7 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
                 href={s.kartenLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex min-h-11 w-fit items-center gap-2 rounded-md border border-tinte/25 bg-white px-4 text-[0.95rem] font-semibold shadow-[0_1px_2px_rgba(18,20,26,.06)] transition-colors hover:border-tinte hover:bg-halle"
+                className="mt-6 inline-flex min-h-11 w-fit items-center gap-2 rounded-[4px] border border-tinte/30 bg-white px-4 text-[0.95rem] font-semibold transition-colors hover:border-tinte hover:bg-halle"
               >
                 Auf der Karte anzeigen
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M3 13L13 3M6 3h7v7" /></svg>

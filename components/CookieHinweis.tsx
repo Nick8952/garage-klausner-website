@@ -42,7 +42,7 @@ export function CookieHinweis({ text, button, datenschutzHref }: { text?: string
         <button
           type="button"
           onClick={schliessen}
-          className="inline-flex min-h-11 shrink-0 cursor-pointer items-center justify-center rounded-md bg-tinte px-5 font-semibold text-white transition-colors hover:bg-black"
+          className="inline-flex min-h-11 shrink-0 cursor-pointer items-center justify-center rounded-[4px] bg-tinte px-5 font-semibold text-white transition-colors hover:bg-black"
         >
           {button || "Verstanden"}
         </button>

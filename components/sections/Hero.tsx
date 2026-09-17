@@ -14,7 +14,7 @@ export function Hero({ b }: { b: HeroBaustein }) {
       <div className="relative overflow-hidden pt-[30vw] sm:pt-[12vw] lg:pt-[6vw]">
         <h1
           id={`${b._key}-titel`}
-          className="display hero-titel absolute inset-x-0 top-[17vw] z-0 mx-auto max-w-[9ch] px-4 text-center text-[12.5vw] uppercase leading-[0.9] text-rot sm:top-[14.2vw] sm:max-w-none sm:whitespace-nowrap sm:text-[6.6vw] lg:top-[6.6vw] lg:text-[6.4vw]"
+          className="display hero-titel absolute inset-x-0 top-[16vw] z-0 mx-auto max-w-[9ch] px-4 text-center text-[14.5vw] uppercase leading-[0.9] text-rot sm:top-[13.6vw] sm:max-w-none sm:whitespace-nowrap sm:text-[7.4vw] lg:top-[6vw] lg:text-[7.3vw]"
         >
           {b.titel}
         </h1>

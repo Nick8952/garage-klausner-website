@@ -31,7 +31,7 @@ export function KontaktFormular({ b, standorte, erster }: { b: KontaktFormularBa
     setGeoeffnet(true);
   }
 
-  const feld = "mt-1.5 block w-full min-h-12 rounded-md border border-linie bg-white px-3 py-2.5 text-tinte placeholder:text-grau/70 focus:border-blau focus:outline-none";
+  const feld = "mt-1.5 block w-full min-h-12 rounded-[4px] border border-linie bg-white px-3 py-2.5 text-tinte placeholder:text-grau/70 focus:border-blau focus:outline-none";
   const label = "block text-sm font-semibold";
 
   return (
@@ -67,7 +67,7 @@ export function KontaktFormular({ b, standorte, erster }: { b: KontaktFormularBa
           <textarea id={`${id}-nachricht`} name="nachricht" rows={5} required className={feld} />
         </div>
         <div className="sm:col-span-2">
-          <button type="submit" className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-md bg-rot px-6 py-3 text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.18)] transition-colors hover:bg-rot-tief active:translate-y-px">
+          <button type="submit" className="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-[4px] bg-rot px-6 py-3 text-[0.95rem] font-semibold text-white transition-colors hover:bg-rot-tief">
             E-Mail-Programm öffnen
           </button>
           <p className="mt-3 text-sm text-grau">

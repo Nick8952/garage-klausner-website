@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import { draftMode } from "next/headers";
 import { Footer } from "@/components/Footer";
 import { CookieHinweis } from "@/components/CookieHinweis";
@@ -12,9 +12,8 @@ import { isSanityConfigured, isStaticExport } from "@/sanity/env";
 import { SanityLive } from "@/sanity/lib/live";
 import "./globals.css";
 
-const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], weight: "variable", variable: "--font-archivo", display: "swap" });
-const plexSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-plex-sans", display: "swap" });
-const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "600"], variable: "--font-plex-mono", display: "swap" });
+const interTight = Inter_Tight({ subsets: ["latin"], weight: ["700", "800"], variable: "--font-inter-tight", display: "swap" });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-inter", display: "swap" });
 
 export async function generateMetadata(): Promise<Metadata> {
   const site = await ladeSite();
@@ -32,7 +31,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const entwurf = !isStaticExport && (await draftMode()).isEnabled;
 
   return (
-    <html lang="de-CH" className={`${archivo.variable} ${plexSans.variable} ${plexMono.variable}`}>
+    <html lang="de-CH" className={`${interTight.variable} ${inter.variable}`}>
       <body className="flex min-h-dvh flex-col">
         {/* Scroll-Reveals blenden Inhalte nur aus, wenn JavaScript läuft (Klasse «js»). */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />

@@ -13,9 +13,8 @@
   --color-grau: #4d525c;
   --color-linie: #d4d4cf;
 
-  --font-display: var(--font-archivo), "Arial Black", sans-serif;
-  --font-body: var(--font-plex-sans), system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-display: var(--font-inter-tight), "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
 
   --breakpoint-xs: 30rem;
 }
@@ -62,10 +61,9 @@ body {
 
 .display {
   font-family: var(--font-display);
-  font-variation-settings: "wdth" 118;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
   text-wrap: balance;
 }
 
@@ -73,24 +71,24 @@ body {
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-rot);
 }
 
 .hero-titel {
-  font-variation-settings: "wdth" 120;
-  letter-spacing: 0.005em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
+/* Zahlen (Öffnungszeiten, Telefon) tabellarisch, damit Spalten sauber stehen. */
 .mono {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-variant-numeric: tabular-nums;
 }
 
 .prose-klausner h3 {
   font-family: var(--font-display);
-  font-variation-settings: "wdth" 110;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.2;

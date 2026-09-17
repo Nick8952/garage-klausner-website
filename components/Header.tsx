@@ -69,7 +69,7 @@ export function Header({ site }: { site: Site }) {
           ))}
           <a
             href={telHref(site.telefon)}
-            className="ml-2 inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-md bg-rot px-3 text-sm lg:ml-3 lg:px-4 lg:text-[0.95rem] font-semibold tracking-[0.01em] text-white shadow-[0_1px_2px_rgba(18,20,26,.2),inset_0_1px_0_rgba(255,255,255,.14)] transition-colors hover:bg-rot-tief"
+            className="ml-2 inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-[4px] bg-rot px-3 text-sm lg:ml-3 lg:px-4 lg:text-[0.95rem] font-semibold text-white transition-colors hover:bg-rot-tief"
           >
             <TelefonIcon />
             {site.telefon}
@@ -78,7 +78,7 @@ export function Header({ site }: { site: Site }) {
 
         <button
           type="button"
-          className="inline-flex h-12 w-12 items-center justify-center rounded-md border border-tinte/25 bg-white shadow-[0_1px_2px_rgba(18,20,26,.06)] md:hidden"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-[4px] border border-tinte/30 bg-white md:hidden"
           aria-expanded={offen}
           aria-controls={menuId}
           onClick={() => setOffen((o) => !o)}
@@ -104,7 +104,7 @@ export function Header({ site }: { site: Site }) {
               {n.label}
             </Link>
           ))}
-          <a href={telHref(site.telefon)} className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-rot px-4 font-semibold text-white">
+          <a href={telHref(site.telefon)} className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] bg-rot px-4 font-semibold text-white">
             <TelefonIcon />
             {site.telefon}
           </a>
