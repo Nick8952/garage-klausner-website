@@ -18,8 +18,8 @@ Stand der Erfassung: 14.09.2026. Quelle: https://www.garageklausner.ch/ (Hostpoi
 | Firmenname «Garage Elefant Klausner AG» | `<title>`, Fusszeile | Kopf-/Fusszeile, Impressum, JSON-LD | übernommen |
 | Titel «GARAGE KLAUSNER» (im Hero-Bild eingebrannt) | Header-Bild | Hero-Titel als Text | übernommen (als echter Text statt Grafik) |
 | «WERKSTÄTTEN» | H1 | Startseite + `/werkstaetten` | übernommen |
-| Hofackerstrasse 74, 8032 Zürich · 044 381 47 17 · elefant@garageklausner.ch · Mo–Fr 08:00–12:00, 13:30–17:30 | Abschnitt Hofackerstrasse | Werkstatt-Karte, Fusszeile, Impressum, JSON-LD | übernommen |
-| Weinbergstrasse 62, 8006 Zürich · 044 525 19 95 · weinberg@garageklausner.ch · «Termin auf Anfrage» | Abschnitt Weinbergstrasse | Werkstatt-Karte, Fusszeile, Impressum, JSON-LD | übernommen |
+| Hofackerstrasse 74, 8032 Zürich · 044 381 47 17 · elefant@garageklausner.ch · Mo–Fr 08:00–12:00, 13:30–17:30 | Abschnitt Hofackerstrasse | Werkstatt-Karte, Fusszeile, Impressum, JSON-LD | übernommen; **Öffnungszeiten am 24.09.2026 auf Nicks Anweisung durch Google-Maps-Zeiten ersetzt: Mo–Fr 07:30–12:00, 13:30–18:00, Sa/So geschlossen** |
+| Weinbergstrasse 62, 8006 Zürich · 044 525 19 95 · weinberg@garageklausner.ch · «Termin auf Anfrage» | Abschnitt Weinbergstrasse | Werkstatt-Karte, Fusszeile, Impressum, JSON-LD | übernommen; **«Termin auf Anfrage» am 24.09.2026 auf Nicks Anweisung durch Google-Maps-Zeiten ersetzt: Mo–Fr 07:30–18:00, Sa/So geschlossen** |
 | «Familienbetrieb seit Generationen» | H2 | Kurzzeile Hero, Abschnitt «Über uns», `/familienbetrieb` | übernommen |
 | «Wir freuen uns über Ihren besuch auf unserer Website.» | Text | `/familienbetrieb`, Startseite | übernommen, Tippfehler «besuch» → «Besuch» |
 | «Ob alte Klassiker oder moderne Elektrofahrzeuge, wir kümmern uns gerne um Ihr Anliegen.» | Text | Hero-Text, `/familienbetrieb` | übernommen, Komma → Gedankenstrich, Aussage unverändert |
@@ -59,7 +59,7 @@ Optimierte Web-Versionen liegen in `public/img/` und werden per `npm run seed` n
 5. **Kein Impressum/keine Datenschutzerklärung vorhanden.** Demo-Impressum enthält nur belegte Angaben;
    Handelsregister-Nr./UID fehlen und sind im Text als «zu ergänzen» markiert. Die Datenschutz-Seite ist
    ein als solcher gekennzeichneter **Entwurf** (siehe unten).
-6. **Keine Öffnungszeiten für die Weinbergstrasse** (nur «Termin auf Anfrage») – so übernommen.
+6. **Öffnungszeiten: Website und Google Maps widersprechen sich.** Website: Hofackerstrasse 08:00–12:00/13:30–17:30, Weinbergstrasse «Termin auf Anfrage». Google Maps (Einträge «Klausner AG, Garage Elefant» und «Garage Weinberg», Stand 24.09.2026): Hofackerstrasse 07:30–12:00/13:30–18:00, Weinbergstrasse 07:30–18:00, beide Sa/So geschlossen. **Demo zeigt die Maps-Zeiten (Entscheid Nick, 24.09.2026). Vom Betrieb bestätigen lassen.**
 7. **Keine Leistungsliste, keine Preise** – nicht erfunden; die Demo beschreibt nur «alte Klassiker und
    moderne Elektrofahrzeuge» wie das Original.
 8. **E-Mail-Empfänger des Formulars** = die zwei E-Mail-Adressen der Website. Ob diese Postfächer aktiv

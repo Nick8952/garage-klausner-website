@@ -31,13 +31,8 @@ export function Standorte({ b, standorte, erster }: { b: StandorteBaustein; stan
                   <dd>{z.zeiten}</dd>
                 </div>
               ))}
-              {s.hinweis && (
-                <div className="flex flex-wrap justify-between gap-x-4 py-1">
-                  <dt className="text-grau">Öffnungszeiten</dt>
-                  <dd>{s.hinweis}</dd>
-                </div>
-              )}
             </dl>
+            {s.hinweis && <p className="mt-1 text-[0.95rem] text-grau">{s.hinweis}</p>}
             {s.kartenLink && (
               <a
                 href={s.kartenLink}

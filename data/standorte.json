@@ -6,8 +6,13 @@
     "plzOrt": "8032 Zürich",
     "telefon": "044 381 47 17",
     "email": "elefant@garageklausner.ch",
-    "oeffnungszeiten": [{ "tage": "Montag bis Freitag", "zeiten": "08:00–12:00, 13:30–17:30" }],
-    "hinweis": "",
+    "oeffnungszeiten": [
+      {
+        "tage": "Montag bis Freitag",
+        "zeiten": "07:30–12:00, 13:30–18:00"
+      }
+    ],
+    "hinweis": "Samstag und Sonntag geschlossen",
     "kartenLink": "https://www.google.com/maps/search/?api=1&query=Hofackerstrasse+74%2C+8032+Z%C3%BCrich",
     "reihenfolge": 1
   },
@@ -18,8 +23,13 @@
     "plzOrt": "8006 Zürich",
     "telefon": "044 525 19 95",
     "email": "weinberg@garageklausner.ch",
-    "oeffnungszeiten": [],
-    "hinweis": "Termin auf Anfrage",
+    "oeffnungszeiten": [
+      {
+        "tage": "Montag bis Freitag",
+        "zeiten": "07:30–18:00"
+      }
+    ],
+    "hinweis": "Samstag und Sonntag geschlossen",
     "kartenLink": "https://www.google.ch/maps/place/Garage+Weinberg/@47.3820246,8.5438383,21z/data=!4m6!3m5!1s0x47900a0a1423e1d5:0xa9faa0dcc341ae3c!8m2!3d47.3821758!4d8.5438981!16s%2Fg%2F1vvdt3md?entry=ttu",
     "reihenfolge": 2
   }
